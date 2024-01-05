@@ -6,10 +6,16 @@ import SearchBox from "../components/SearchBox";
 function Homepage() {
   return (
     <div className="homepage">
-      <Header />
-      <SearchBox />
-      <Filter />
-      <CountryGrid />
+      <div className="homepage__header">
+        <Header />
+      </div>
+      <div className="homepage__main">
+        <div className="main__grid-header">
+          <SearchBox />
+          <Filter />
+        </div>
+        <CountryGrid />
+      </div>
     </div>
   );
 }

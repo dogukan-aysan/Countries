@@ -1,5 +1,5 @@
 function Filter() {
-  return <div className="homepage__filter">Filter</div>;
+  return <div className="grid-header__filter">Filter</div>;
 }
 
 export default Filter;
