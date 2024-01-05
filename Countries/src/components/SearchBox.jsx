@@ -1,5 +1,5 @@
 function SearchBox() {
-  return <div>SearchBox</div>;
+  return <div className="homepage__search-box">SearchBox</div>;
 }
 
 export default SearchBox;

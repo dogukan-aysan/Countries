@@ -1,5 +1,5 @@
 function DarkModeToggle() {
-  return <div>DarkModeToggle</div>;
+  return <>DarkModeToggle</>;
 }
 
 export default DarkModeToggle;

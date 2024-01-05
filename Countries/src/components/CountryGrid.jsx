@@ -1,5 +1,5 @@
 function CountryGrid() {
-  return <div>CountryGrid</div>;
+  return <div className="homepage__country-grid">CountryGrid</div>;
 }
 
 export default CountryGrid;
