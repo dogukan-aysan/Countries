@@ -6,9 +6,7 @@ import SearchBox from "../components/SearchBox";
 function Homepage() {
   return (
     <div className="homepage">
-      <header className="homepage__header">
-        <Header />
-      </header>
+      <Header />
       <main className="homepage__main">
         <div className="main__grid-header">
           <SearchBox />
