@@ -21,6 +21,9 @@ body {
   height: 100vh;
 }
 
+.country-page__main {
+  background-color: var(--color-light-mode-background);
+}
 .country-page {
   height: 100vh;
   display: flex;
