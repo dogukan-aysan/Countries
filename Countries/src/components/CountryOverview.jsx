@@ -1,5 +1,5 @@
 function CountryOverview() {
-  return <div className="country-info__overview"></div>;
+  return <div className="country-info__overview">COUNTRY OVERVIEW</div>;
 }
 
 export default CountryOverview;

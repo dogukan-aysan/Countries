@@ -6,8 +6,10 @@ function CountryPage() {
   return (
     <div className="country-page">
       <Header />
-      <BackButton />
-      <CountryInfo />
+      <main className="country-page__main">
+        <BackButton />
+        <CountryInfo />
+      </main>
     </div>
   );
 }

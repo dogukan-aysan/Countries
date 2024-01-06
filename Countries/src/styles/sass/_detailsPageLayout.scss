@@ -1,0 +1,31 @@
+.country-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__main {
+    padding: 0 var(--spacing-md);
+    height: 100%;
+  }
+  &__back-button {
+    margin: var(--spacing-default) 0;
+  }
+  &__country-info {
+    display: flex;
+    gap: var(--spacing-lg);
+    height: 40%;
+  }
+}
+
+.country-info {
+  &__flag {
+  }
+  &__data-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__overview {
+  }
+  &__border-countries {
+    display: flex;
+  }
+}
