@@ -11,31 +11,161 @@ html {
 }
 
 body {
-  background-color: var(--color-light-mode-background);
   height: 100vh;
+  width: var(--desktop-width);
+  margin: 0 auto;
+  background-color: grey;
 }
 
 #root {
   height: 100vh;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-light-mode-elements);
+  box-shadow: var(--shadow-dark);
+}
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-tiny);
+}
+.homepage__main {
+  background-color: var(--color-light-mode-background);
+}
+
+.grid-header__search-box {
+  box-shadow: var(--shadow-light);
+}
+.grid-header__filter {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 0.65rem auto;
+  background-color: var(--color-light-mode-elements);
+  border: none;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-light);
+}
+.country-card {
+  background-color: var(--color-light-mode-elements);
+  box-shadow: var(--shadow-light);
+  border-radius: var(--radius-sm);
+}
+.country-card__flag {
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+.search-box__input {
+  background-color: var(--color-light-mode-elements);
+  border: none;
+  border-radius: var(--radius-sm);
+}
+
 .homepage {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
+.homepage__main {
+  padding: 0 var(--spacing-md);
+  height: 100%;
+}
+
+.main__grid-header {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-default) 0;
+}
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: calc(var(--spacing-huge) * 0.7);
+  gap: calc(var(--spacing-md) * 1.4);
+}
+
+.grid-header__search-box {
+  width: var(--spacing-huge);
+  position: relative;
+}
+.grid-header__filter {
+  text-indent: var(--spacing-sm);
+  background-position: right 2rem top 50%;
+  width: calc(var(--spacing-lg) * 1.3);
+}
+.grid-header__filter-item {
+  margin: var(--spacing-lg) 0;
+}
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+}
+.country-card__flag {
+  height: 45%;
+}
+.country-card__overview {
+  flex-basis: 55%;
+  padding: var(--spacing-sm) var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.overview__list {
+  list-style-type: none;
+}
+.overview__list-item:not(:last-child) {
+  margin-bottom: calc(var(--spacing-tiny) * 0.7);
+}
+
+.search-box__magnifying-glass {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--spacing-default);
+}
+.search-box__input {
+  width: 100%;
+  padding: calc(var(--spacing-tiny) * 1.4) calc(var(--spacing-md) * 1.5);
+}
+
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-default);
   font-weight: var(--font-weight-light);
-  letter-spacing: var(--letter-spacing-md);
   color: var(--color-light-mode-text);
   line-height: var(--line-height-md);
 }
 
+.search-box__magnifying-glass {
+  color: var(--color-light-mode-input);
+}
+.search-box__input::placeholder {
+  color: var(--color-light-mode-input);
+}
+
+.overview__heading {
+  font-weight: var(--font-weight-dark);
+}
+.overview__list-item {
+  font-size: var(--font-size-homepage-items);
+}
+
+.list-item__field {
+  color: var(--color-light-mode-text-light);
+  font-weight: var(--font-weight-default);
+}
+
+.dark-mode-toggle {
+  font-weight: var(--font-weight-default);
+}
 :root {
   --color-light-mode-background: hsl(0, 0%, 98%);
-  --color-light-mode-text: hsl(200, 15%, 8%);
+  --color-light-mode-text: hsl(200, 15%, 12%);
+  --color-light-mode-text-light: hsl(206, 16%, 9%);
   --color-light-mode-elements: hsl(0, 0%, 100%);
   --color-light-mode-input: hsl(0, 0%, 52%);
   --color-dark-mode-background: hsl(207, 26%, 17%);

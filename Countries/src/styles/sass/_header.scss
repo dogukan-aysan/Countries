@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-light-mode-elements);
+  box-shadow: var(--shadow-dark);
+  &__heading {
+  }
+}
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-tiny);
+  &__icon {
+  }
+}

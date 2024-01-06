@@ -2,7 +2,39 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-default);
   font-weight: var(--font-weight-light);
-  letter-spacing: var(--letter-spacing-md);
   color: var(--color-light-mode-text);
   line-height: var(--line-height-md);
+}
+///////////////////////////////////////////////////////////
+/// SEARCH BOX
+.search-box {
+  &__magnifying-glass {
+    color: var(--color-light-mode-input);
+  }
+  &__input {
+    &::placeholder {
+      color: var(--color-light-mode-input);
+    }
+  }
+}
+///////////////////////////////////////////////////////////
+/// COUNTRY CARD
+.overview {
+  &__heading {
+    font-weight: var(--font-weight-dark);
+  }
+  &__list-item {
+    font-size: var(--font-size-homepage-items);
+  }
+}
+
+.list-item__field {
+  color: var(--color-light-mode-text-light);
+  font-weight: var(--font-weight-default);
+}
+
+.dark-mode-toggle {
+  font-weight: var(--font-weight-default);
+  &__icon {
+  }
 }

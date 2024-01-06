@@ -11,8 +11,10 @@ html {
 }
 
 body {
-  background-color: var(--color-light-mode-background);
   height: 100vh;
+  width: var(--desktop-width);
+  margin: 0 auto;
+  background-color: grey;
 }
 
 #root {
