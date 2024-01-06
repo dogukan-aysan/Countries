@@ -40,9 +40,6 @@
 .country-card {
   display: flex;
   flex-direction: column;
-  &__flag {
-    height: 45%;
-  }
   &__overview {
     flex-basis: 55%;
     padding: var(--spacing-sm) var(--spacing-sm);

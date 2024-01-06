@@ -33,9 +33,6 @@
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   border-radius: var(--radius-sm);
-  &__flag {
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-  }
   &__overview {
   }
 }
