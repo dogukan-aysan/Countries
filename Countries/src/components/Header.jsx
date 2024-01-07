@@ -7,8 +7,10 @@ function Header() {
     navigate("/");
   };
   return (
-    <div className="header" onClick={handleClick}>
-      <h2 className="header__heading">Where in the world?</h2>
+    <div className="header">
+      <h2 className="header__heading" onClick={handleClick}>
+        Where in the world?
+      </h2>
       <DarkModeToggle />
     </div>
   );
