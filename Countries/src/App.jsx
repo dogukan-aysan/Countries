@@ -14,7 +14,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/country-details/:id" element={<CountryPage />} />
+          <Route
+            path="/country-details/:officialName"
+            element={<CountryPage />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

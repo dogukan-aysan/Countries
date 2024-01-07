@@ -5,7 +5,9 @@ function CountryCard({ country }) {
   const { flags, name, population, region, capital } = country;
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/country-details/456");
+    navigate(
+      `/country-details/${name.official.replaceAll(" ", "-").toLowerCase()}`
+    );
   };
   return (
     <div className="country-card" onClick={handleClick}>
