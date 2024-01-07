@@ -24,6 +24,11 @@ body {
 .country-page__main {
   background-color: var(--color-light-mode-background);
 }
+.country-page__back-button {
+  background-color: var(--color-light-mode-elements);
+  box-shadow: var(--shadow-dark);
+  border-radius: var(--radius-sm);
+}
 .country-page {
   height: 100vh;
   display: flex;
@@ -35,6 +40,10 @@ body {
 }
 .country-page__back-button {
   margin: var(--spacing-default) 0;
+  display: inline-flex;
+  gap: var(--spacing-tiny);
+  padding: var(--spacing-tiny) var(--spacing-sm);
+  margin: calc(var(--spacing-md) * 1.7) 0;
 }
 .country-page__country-info {
   display: flex;
@@ -45,6 +54,7 @@ body {
 .country-info__data-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .country-info__border-countries {
   display: flex;
