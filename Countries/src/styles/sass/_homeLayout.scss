@@ -15,7 +15,7 @@
   }
   &__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 27rem);
     grid-auto-rows: calc(var(--spacing-huge) * 0.7);
     gap: calc(var(--spacing-md) * 1.4);
   }
