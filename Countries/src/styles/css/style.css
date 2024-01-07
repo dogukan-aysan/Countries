@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 }
 .country-page__main {
-  padding: 0 var(--spacing-md);
+  padding: 0 calc(var(--spacing-md) * 1.5);
   height: 100%;
 }
 .country-page__back-button {
@@ -94,16 +94,18 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm) calc(var(--spacing-md) * 1.5);
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   z-index: 1;
 }
+
 .dark-mode-toggle {
   display: flex;
   align-items: center;
   gap: var(--spacing-tiny);
 }
+
 .homepage__main {
   background-color: var(--color-light-mode-background);
 }
@@ -140,7 +142,7 @@ body {
   flex-direction: column;
 }
 .homepage__main {
-  padding: 0 var(--spacing-md);
+  padding: 0 calc(var(--spacing-md) * 1.5);
   height: 100%;
 }
 
