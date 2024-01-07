@@ -32,6 +32,8 @@
   }
   &__border-countries {
     display: flex;
+    gap: var(--spacing-tiny);
+    align-items: center;
   }
 }
 .overview {
@@ -45,5 +47,12 @@
     &:nth-of-type(-n + 5) {
       margin-right: var(--spacing-lg);
     }
+  }
+}
+
+.border-countries {
+  &__buttons {
+    display: flex;
+    gap: var(--spacing-tiny);
   }
 }

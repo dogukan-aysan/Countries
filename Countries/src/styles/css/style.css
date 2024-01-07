@@ -21,6 +21,14 @@ body {
   height: 100vh;
 }
 
+.button {
+  background-color: var(--color-light-mode-elements);
+  padding: calc(var(--spacing-tiny) * 0.5) var(--spacing-sm);
+  border: none;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-dark);
+}
+
 .country-page__main {
   background-color: var(--color-light-mode-background);
 }
@@ -64,6 +72,8 @@ body {
 }
 .country-info__border-countries {
   display: flex;
+  gap: var(--spacing-tiny);
+  align-items: center;
 }
 
 .overview__list {
@@ -74,6 +84,11 @@ body {
 }
 .overview__list-item:nth-of-type(-n + 5) {
   margin-right: var(--spacing-lg);
+}
+
+.border-countries__buttons {
+  display: flex;
+  gap: var(--spacing-tiny);
 }
 
 .header {
@@ -217,6 +232,12 @@ body {
 
 .dark-mode-toggle {
   font-weight: var(--font-weight-default);
+}
+
+.border-countries__span {
+  font-size: var(--font-size-homepage-items);
+  font-weight: var(--font-weight-default);
+  color: var(--color-light-mode-text-light);
 }
 
 :root {

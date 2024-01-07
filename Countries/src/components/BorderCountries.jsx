@@ -5,9 +5,12 @@ function BorderCountries() {
     <div className="country-info__border-countries">
       <span className="border-countries__span">Border Countries: </span>
       <div className="border-countries__buttons">
-        <Button>X</Button>
-        <Button>Y</Button>
-        <Button>Z</Button>
+        <Button>Armenia</Button>
+        <Button>Azerbaijan</Button>
+        <Button>Georgia</Button>
+        <Button>Iran</Button>
+        <Button>Iraq</Button>
+        <Button>Syria</Button>
       </div>
     </div>
   );

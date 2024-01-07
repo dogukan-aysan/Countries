@@ -1,0 +1,7 @@
+.button {
+  background-color: var(--color-light-mode-elements);
+  padding: calc(var(--spacing-tiny) * 0.5) var(--spacing-sm);
+  border: none;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-dark);
+}
