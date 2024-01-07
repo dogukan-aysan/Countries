@@ -6,5 +6,9 @@
     background-color: var(--color-light-mode-elements);
     box-shadow: var(--shadow-dark);
     border-radius: var(--radius-sm);
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }

@@ -22,6 +22,9 @@
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   border-radius: var(--radius-sm);
+  &:hover {
+    cursor: pointer;
+  }
 }
 .search-box {
   &__input {

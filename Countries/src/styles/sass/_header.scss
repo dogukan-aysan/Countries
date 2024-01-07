@@ -5,6 +5,11 @@
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   z-index: 1;
+  &__heading {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 .dark-mode-toggle {
   display: flex;

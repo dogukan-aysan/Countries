@@ -1,7 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 // GRID CHILD
 function CountryCard() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/country-details/456");
+  };
   return (
-    <div className="country-card">
+    <div className="country-card" onClick={handleClick}>
       <img
         className="country-card__flag"
         src="https://flagcdn.com/w320/tr.png"

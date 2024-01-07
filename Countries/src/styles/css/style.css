@@ -37,6 +37,10 @@ body {
   box-shadow: var(--shadow-dark);
   border-radius: var(--radius-sm);
 }
+.country-page__back-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 
 .country-page {
   height: 100vh;
@@ -102,6 +106,9 @@ body {
   box-shadow: var(--shadow-light);
   z-index: 1;
 }
+.header__heading:hover {
+  cursor: pointer;
+}
 
 .dark-mode-toggle {
   display: flex;
@@ -131,6 +138,9 @@ body {
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   border-radius: var(--radius-sm);
+}
+.country-card:hover {
+  cursor: pointer;
 }
 
 .search-box__input {
