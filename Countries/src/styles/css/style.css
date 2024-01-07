@@ -56,8 +56,23 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+.country-info__overview {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-sm) * 1.5);
+}
 .country-info__border-countries {
   display: flex;
+}
+
+.overview__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(var(--spacing-md) * 2.5);
+}
+.overview__list-item:nth-of-type(-n + 5) {
+  margin-right: var(--spacing-lg);
 }
 
 .header {

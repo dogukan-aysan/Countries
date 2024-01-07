@@ -3,6 +3,9 @@
     background-color: var(--color-light-mode-background);
   }
   &__back-button {
+    background-color: var(--color-light-mode-elements);
+    box-shadow: var(--shadow-dark);
+    border-radius: var(--radius-sm);
   }
   &__country-info {
   }

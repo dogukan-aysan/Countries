@@ -8,6 +8,10 @@
   }
   &__back-button {
     margin: var(--spacing-default) 0;
+    display: inline-flex;
+    gap: var(--spacing-tiny);
+    padding: var(--spacing-tiny) var(--spacing-sm);
+    margin: calc(var(--spacing-md) * 1.7) 0;
   }
   &__country-info {
     display: flex;
@@ -22,10 +26,28 @@
   &__data-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   &__overview {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-sm) * 1.5);
   }
   &__border-countries {
     display: flex;
+  }
+}
+
+.overview {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(var(--spacing-md) * 2.5);
+  }
+  &__list-item {
+    &:nth-of-type(-n + 5) {
+      margin-right: var(--spacing-lg);
+    }
   }
 }
