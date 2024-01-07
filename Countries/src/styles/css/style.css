@@ -118,6 +118,7 @@ body {
 
 .homepage__main {
   background-color: var(--color-light-mode-background);
+  overflow: scroll;
 }
 
 .grid-header__search-box {
