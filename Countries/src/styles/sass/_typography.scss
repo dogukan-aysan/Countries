@@ -19,7 +19,7 @@ body {
 }
 ///////////////////////////////////////////////////////////
 /// COUNTRY CARD
-.overview {
+.country-card {
   &__heading {
     font-weight: var(--font-weight-dark);
   }
@@ -41,5 +41,15 @@ body {
     font-size: var(--font-size-homepage-items);
     font-weight: var(--font-weight-default);
     color: var(--color-light-mode-text-light);
+  }
+}
+///////////////////////////////////////////////////////////
+/// COUNTRY INFO
+.country-info {
+  &__heading {
+    font-weight: var(--font-weight-dark);
+  }
+  &__list-item {
+    font-size: var(--font-size-homepage-items);
   }
 }
