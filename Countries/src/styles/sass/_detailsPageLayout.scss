@@ -19,10 +19,7 @@
     height: 40%;
   }
 }
-
 .country-info {
-  &__flag {
-  }
   &__data-container {
     display: flex;
     flex-direction: column;
@@ -37,7 +34,6 @@
     display: flex;
   }
 }
-
 .overview {
   &__list {
     display: flex;

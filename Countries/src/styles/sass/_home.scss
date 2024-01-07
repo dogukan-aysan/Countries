@@ -3,14 +3,6 @@
     background-color: var(--color-light-mode-background);
   }
 }
-
-.main {
-  &__grid-header {
-  }
-  &__grid {
-  }
-}
-
 .grid-header {
   &__search-box {
     box-shadow: var(--shadow-light);
@@ -25,30 +17,13 @@
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-light);
   }
-  &__filter-item {
-  }
 }
-
 .country-card {
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   border-radius: var(--radius-sm);
-  &__overview {
-  }
 }
-
-.overview {
-  &__heading {
-  }
-  &__list {
-  }
-  &__list-item {
-  }
-}
-
 .search-box {
-  &__magnifying-glass {
-  }
   &__input {
     background-color: var(--color-light-mode-elements);
     border: none;

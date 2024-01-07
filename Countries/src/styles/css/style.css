@@ -29,6 +29,7 @@ body {
   box-shadow: var(--shadow-dark);
   border-radius: var(--radius-sm);
 }
+
 .country-page {
   height: 100vh;
   display: flex;
@@ -105,11 +106,13 @@ body {
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-light);
 }
+
 .country-card {
   background-color: var(--color-light-mode-elements);
   box-shadow: var(--shadow-light);
   border-radius: var(--radius-sm);
 }
+
 .search-box__input {
   background-color: var(--color-light-mode-elements);
   border: none;
@@ -215,6 +218,7 @@ body {
 .dark-mode-toggle {
   font-weight: var(--font-weight-default);
 }
+
 :root {
   --color-light-mode-background: hsl(0, 0%, 98%);
   --color-light-mode-text: hsl(200, 15%, 12%);

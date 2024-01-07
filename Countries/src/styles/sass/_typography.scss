@@ -27,14 +27,10 @@ body {
     font-size: var(--font-size-homepage-items);
   }
 }
-
 .list-item__field {
   color: var(--color-light-mode-text-light);
   font-weight: var(--font-weight-default);
 }
-
 .dark-mode-toggle {
   font-weight: var(--font-weight-default);
-  &__icon {
-  }
 }
