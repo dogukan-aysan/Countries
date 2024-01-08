@@ -1,9 +1,15 @@
+import { useContext } from "react";
 import useSingleCountry from "../hooks/useCountriesWithCode";
 import Button from "./Button";
+import { CountryContext } from "../context/CountryContext";
 
 function BorderCountries({ country }) {
+  const { dispatch } = useContext(CountryContext);
   const bordersString = country.borders?.join(",");
   const { data, isLoading, isError } = useSingleCountry(bordersString);
+  const handleBorderCountryClick = (clickedCountry) => {
+    dispatch({ type: "country/selected", payload: clickedCountry });
+  };
   if (isLoading) return <div>LOADING...</div>;
   if (isError) return <div>ERROR</div>;
   return (
@@ -12,7 +18,11 @@ function BorderCountries({ country }) {
       {country.borders ? (
         <div className="border-countries__buttons">
           {data.map((borderCountry, index) => (
-            <Button key={index}>{borderCountry.name.common}</Button>
+            <Button
+              key={index}
+              handleClick={handleBorderCountryClick}
+              country={borderCountry}
+            />
           ))}
         </div>
       ) : (

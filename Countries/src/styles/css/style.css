@@ -28,6 +28,10 @@ body {
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-dark);
 }
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 
 .country-page__main {
   background-color: var(--color-light-mode-background);
