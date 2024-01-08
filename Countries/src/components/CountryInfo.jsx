@@ -14,9 +14,7 @@ function CountryInfo() {
       />
       <div className="country-info__data-container">
         <CountryOverview country={selectedCountry} />
-        {selectedCountry.borders && (
-          <BorderCountries country={selectedCountry} />
-        )}
+        <BorderCountries country={selectedCountry} />
       </div>
     </div>
   );
