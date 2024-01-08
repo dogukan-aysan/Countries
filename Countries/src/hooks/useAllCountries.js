@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { getAllCountries } from "../service/getCountries";
 
-const useCountries = () => {
+const useAllCountries = () => {
   const query = useQuery({
     queryKey: ["countries"],
     queryFn: getAllCountries,
@@ -9,4 +9,4 @@ const useCountries = () => {
   return query;
 };
 
-export default useCountries;
+export default useAllCountries;
