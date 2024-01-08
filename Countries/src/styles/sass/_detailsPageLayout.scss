@@ -58,6 +58,7 @@
 .border-countries {
   &__buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-tiny);
   }
 }
