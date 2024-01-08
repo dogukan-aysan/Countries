@@ -9,7 +9,7 @@ function CountryInfo() {
     <div className="country-page__country-info">
       <img
         className="country-info__flag"
-        src={selectedCountry.flags?.png}
+        src={selectedCountry.flags?.svg}
         alt="flag"
       />
       <div className="country-info__data-container">

@@ -69,6 +69,9 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+.country-info__flag {
+  width: 40%;
+}
 .country-info__overview {
   display: flex;
   flex-direction: column;

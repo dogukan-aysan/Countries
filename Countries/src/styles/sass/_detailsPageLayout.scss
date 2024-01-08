@@ -25,6 +25,9 @@
     flex-direction: column;
     justify-content: space-around;
   }
+  &__flag {
+    width: 40%;
+  }
   &__overview {
     display: flex;
     flex-direction: column;
