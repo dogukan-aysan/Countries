@@ -167,9 +167,9 @@ body {
 }
 .main__grid {
   display: grid;
-  grid-template-columns: repeat(4, 27rem);
+  grid-template-columns: repeat(4, 21.15%);
   grid-auto-rows: calc(var(--spacing-huge) * 0.7);
-  gap: calc(var(--spacing-md) * 1.4);
+  gap: calc(var(--spacing-md) * 1.3);
 }
 
 .grid-header__search-box {
