@@ -5,7 +5,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Homepage from "./pages/Homepage";
 import CountryPage from "./pages/CountryPage";
 import PageNotFound from "./pages/PageNotFound";
-import { CountryProvider } from "./CountryContext";
+import { CountryProvider } from "./context/CountryContext";
 
 const queryClient = new QueryClient();
 
