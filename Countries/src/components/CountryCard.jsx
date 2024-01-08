@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { CountryContext } from "../context/CountryContext";
 
 // GRID CHILD
 function CountryCard({ country }) {
   const { flags, name, population, region, capital } = country;
+  const { dispatch } = useContext(CountryContext);
   const navigate = useNavigate();
   const handleClick = () => {
+    dispatch({ type: "country/selected", payload: country });
     navigate(
       `/country-details/${name.official.replaceAll(" ", "-").toLowerCase()}`
     );
