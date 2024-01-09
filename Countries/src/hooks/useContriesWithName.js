@@ -2,11 +2,11 @@ import { useQuery } from "@tanstack/react-query";
 import { getCountriesWithName } from "../service/apiCountries";
 
 const useContriesWithName = (text) => {
-  const query = useQuery({
-    queryKey: ["searchedCountries"],
+  const { isLoading, isError, data, error } = useQuery({
+    queryKey: ["searchedCountries", text],
     queryFn: () => getCountriesWithName(text),
   });
-  return query;
+  return { isLoading, isError, data, error };
 };
 
 export default useContriesWithName;

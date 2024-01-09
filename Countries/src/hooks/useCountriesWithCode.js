@@ -3,7 +3,7 @@ import { getCountriesWithCode } from "../service/apiCountries";
 
 const useCountriesWithCode = (codes) => {
   const query = useQuery({
-    queryKey: ["borderCountries"],
+    queryKey: ["borderCountries", codes],
     queryFn: () => getCountriesWithCode(codes),
   });
   return query;
