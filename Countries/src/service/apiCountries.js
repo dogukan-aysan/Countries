@@ -3,8 +3,10 @@ import { BASE_URL } from "../utils/constants";
 const fields =
   "fields=flags,name,population,region,capital,subregion,tld,currencies,languages,borders";
 
-export const getCountries = async (text) => {
-  const url = text
+export const getCountries = async (text = "", region = "") => {
+  const url = region
+    ? `${BASE_URL}region/${region}?${fields}`
+    : text
     ? `${BASE_URL}name/${text}?${fields}`
     : `${BASE_URL}all?${fields}`;
   try {

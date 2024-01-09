@@ -4,10 +4,10 @@ import { useContext } from "react";
 import { CountryContext } from "../context/CountryContext";
 
 const useCountries = () => {
-  const { searchedText } = useContext(CountryContext);
+  const { searchedText, selectedRegion } = useContext(CountryContext);
   const { isLoading, isError, data, error } = useQuery({
-    queryKey: ["countries", searchedText],
-    queryFn: () => getCountries(searchedText),
+    queryKey: ["countries", searchedText, selectedRegion],
+    queryFn: () => getCountries(searchedText, selectedRegion),
   });
   return { isLoading, isError, data, error };
 };

@@ -3,7 +3,7 @@ import { CountryContext } from "../context/CountryContext";
 
 function Filter() {
   const [selected, setSelected] = useState("");
-  const { dispatch } = useContext(CountryContext);
+  const { dispatch, selectedRegion } = useContext(CountryContext);
   useEffect(() => {
     dispatch({ type: "region", payload: selected });
   }, [selected, dispatch]);
@@ -11,6 +11,7 @@ function Filter() {
     <select
       className="grid-header__filter"
       onChange={(e) => setSelected(e.target.value)}
+      value={selectedRegion}
     >
       <option className="grid-header__filter-item" defaultValue={true} hidden>
         Filter by Region
