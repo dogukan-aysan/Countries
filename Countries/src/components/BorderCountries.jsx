@@ -15,7 +15,7 @@ function BorderCountries({ country }) {
   return (
     <div className="country-info__border-countries">
       <span className="border-countries__span">Border Countries: </span>
-      {country.borders ? (
+      {country.borders.length > 0 ? (
         <div className="border-countries__buttons">
           {data.map((borderCountry, index) => (
             <Button
