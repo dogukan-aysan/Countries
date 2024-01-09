@@ -21,3 +21,14 @@ export const getCountriesWithCode = async (codes) => {
     console.log(err);
   }
 };
+
+export const getCountriesWithName = async (text) => {
+  try {
+    const res = await fetch(`${BASE_URL}name/${text}`);
+    const data = await res.json();
+    if (!data) throw new Error("Something went wrong on getting country");
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
+};
