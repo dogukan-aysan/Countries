@@ -3,6 +3,7 @@ import { createContext, useReducer } from "react";
 const initialState = {
   selectedCountry: "",
   searchedText: "",
+  selectedRegion: "",
 };
 
 function reducer(state, action) {
@@ -19,13 +20,11 @@ function reducer(state, action) {
 const CountryContext = createContext();
 
 const CountryProvider = ({ children }) => {
-  const [{ selectedCountry, searchedText }, dispatch] = useReducer(
-    reducer,
-    initialState
-  );
+  const [{ selectedCountry, searchedText, selectedRegion }, dispatch] =
+    useReducer(reducer, initialState);
   return (
     <CountryContext.Provider
-      value={{ selectedCountry, searchedText, dispatch }}
+      value={{ selectedCountry, searchedText, selectedRegion, dispatch }}
     >
       {children}
     </CountryContext.Provider>
