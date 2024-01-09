@@ -1,11 +1,8 @@
-import { useContext } from "react";
 import CountryCard from "./CountryCard";
-import { CountryContext } from "../context/CountryContext";
 import useContriesWithName from "../hooks/useContriesWithName";
 
 function CountryGrid() {
-  const { searchedText } = useContext(CountryContext);
-  const { isLoading, isError, data, error } = useContriesWithName(searchedText);
+  const { isLoading, isError, data, error } = useContriesWithName();
   if (isLoading) return <div>LOADING...</div>;
   if (isError) return <div>{error}</div>;
   return (
