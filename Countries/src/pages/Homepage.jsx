@@ -3,13 +3,17 @@ import CountryGrid from "../components/CountryGrid";
 import Filter from "../components/Filter";
 import Header from "../components/Header";
 import SearchBox from "../components/SearchBox";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { CountryContext } from "../context/CountryContext";
 
 function Homepage() {
   const queryClient = useQueryClient();
+  const { selectedCountry, dispatch } = useContext(CountryContext);
   useEffect(() => {
+    if (selectedCountry !== "")
+      dispatch({ type: "country/selected", payload: "" });
     queryClient.resetQueries("country");
-  }, [queryClient]);
+  }, [queryClient, selectedCountry, dispatch]);
   return (
     <div className="homepage">
       <Header />
