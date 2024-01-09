@@ -1,9 +1,12 @@
 import { BASE_URL } from "../utils/constants";
 
+const fields =
+  "fields=flags,name,population,region,capital,subregion,tld,currencies,languages,borders";
+
 export const getCountries = async (text) => {
   const url = text
-    ? `${BASE_URL}name/${text}?fields=flags,name,population,region,capital,subregion,tld,currencies,languages,borders`
-    : `${BASE_URL}all?fields=flags,name,population,region,capital,subregion,tld,currencies,languages,borders`;
+    ? `${BASE_URL}name/${text}?${fields}`
+    : `${BASE_URL}all?${fields}`;
   try {
     const res = await fetch(url);
     const data = await res.json();
