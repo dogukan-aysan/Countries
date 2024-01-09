@@ -23,8 +23,9 @@ export const getCountriesWithCode = async (codes) => {
 };
 
 export const getCountriesWithName = async (text) => {
+  const url = text ? `${BASE_URL}name/${text}` : `${BASE_URL}all`;
   try {
-    const res = await fetch(`${BASE_URL}name/${text}`);
+    const res = await fetch(url);
     const data = await res.json();
     if (!data) throw new Error("Something went wrong on getting country");
     return data;
