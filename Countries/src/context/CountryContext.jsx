@@ -12,6 +12,8 @@ function reducer(state, action) {
       return { ...state, selectedCountry: action.payload };
     case "searched":
       return { ...state, searchedText: action.payload };
+    case "region":
+      return { ...state, selectedRegion: action.payload };
     default:
       return { ...state };
   }
