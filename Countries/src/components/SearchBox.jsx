@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { CountryContext } from "../context/CountryContext";
 
 function SearchBox() {
-  const [typedText, setTypedText] = useState();
-  const handleChange = (text) => {
-    setTypedText(text);
-  };
+  const [typedText, setTypedText] = useState("");
+  const { dispatch } = useContext(CountryContext);
+  useEffect(() => {
+    if (typedText !== "") dispatch({ type: "searched", payload: typedText });
+  }, [typedText, dispatch]);
   return (
     <div className="grid-header__search-box">
       <span className="search-box__magnifying-glass">
@@ -16,7 +18,7 @@ function SearchBox() {
         type="text"
         placeholder="Search for a country..."
         value={typedText}
-        onChange={(e) => handleChange(e.target.value)}
+        onChange={(e) => setTypedText(e.target.value)}
       />
     </div>
   );
