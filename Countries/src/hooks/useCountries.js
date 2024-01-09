@@ -3,7 +3,7 @@ import { getCountries } from "../service/apiCountries";
 import { useContext } from "react";
 import { CountryContext } from "../context/CountryContext";
 
-const useContriesWithName = () => {
+const useCountries = () => {
   const { searchedText } = useContext(CountryContext);
   const { isLoading, isError, data, error } = useQuery({
     queryKey: ["countries", searchedText],
@@ -12,4 +12,4 @@ const useContriesWithName = () => {
   return { isLoading, isError, data, error };
 };
 
-export default useContriesWithName;
+export default useCountries;

@@ -1,8 +1,8 @@
 import CountryCard from "./CountryCard";
-import useContriesWithName from "../hooks/useContriesWithName";
+import useCountries from "../hooks/useCountries";
 
 function CountryGrid() {
-  const { isLoading, isError, data, error } = useContriesWithName();
+  const { isLoading, isError, data, error } = useCountries();
   if (isLoading) return <div>LOADING...</div>;
   if (isError) return <div>{error}</div>;
   return (
