@@ -2,12 +2,15 @@ import { createContext, useReducer } from "react";
 
 const initialState = {
   selectedCountry: "",
+  searchedText: "",
 };
 
 function reducer(state, action) {
   switch (action.type) {
     case "country/selected":
       return { ...state, selectedCountry: action.payload };
+    case "searched":
+      return { ...state, searchedText: action.payload };
     default:
       return { ...state };
   }
@@ -16,9 +19,14 @@ function reducer(state, action) {
 const CountryContext = createContext();
 
 const CountryProvider = ({ children }) => {
-  const [{ selectedCountry }, dispatch] = useReducer(reducer, initialState);
+  const [{ selectedCountry, searchedText }, dispatch] = useReducer(
+    reducer,
+    initialState
+  );
   return (
-    <CountryContext.Provider value={{ selectedCountry, dispatch }}>
+    <CountryContext.Provider
+      value={{ selectedCountry, searchedText, dispatch }}
+    >
       {children}
     </CountryContext.Provider>
   );
