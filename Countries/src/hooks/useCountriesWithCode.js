@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { getCountriesWithCode } from "../service/getCountries";
 
-const useSingleCountry = (codes) => {
+const useCountriesWithCode = (codes) => {
   const query = useQuery({
     queryKey: ["borderCountries"],
     queryFn: () => getCountriesWithCode(codes),
@@ -9,4 +9,4 @@ const useSingleCountry = (codes) => {
   return query;
 };
 
-export default useSingleCountry;
+export default useCountriesWithCode;

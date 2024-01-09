@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import useSingleCountry from "../hooks/useCountriesWithCode";
+import useCountriesWithCode from "../hooks/useCountriesWithCode";
 import Button from "./Button";
 import { CountryContext } from "../context/CountryContext";
 
 function BorderCountries({ country }) {
   const { dispatch } = useContext(CountryContext);
   const bordersString = country.borders?.join(",");
-  const { data, isLoading, isError } = useSingleCountry(bordersString);
+  const { data, isLoading, isError } = useCountriesWithCode(bordersString);
   const handleBorderCountryClick = (clickedCountry) => {
     dispatch({ type: "country/selected", payload: clickedCountry });
   };
