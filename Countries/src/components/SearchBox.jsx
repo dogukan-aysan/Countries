@@ -4,10 +4,12 @@ import { CountryContext } from "../context/CountryContext";
 
 function SearchBox() {
   const [typedText, setTypedText] = useState("");
-  const { dispatch } = useContext(CountryContext);
+  const { dispatch, searchedText } = useContext(CountryContext);
   useEffect(() => {
+    if (typedText === "" && searchedText !== "")
+      dispatch({ type: "searched", payload: "" });
     if (typedText !== "") dispatch({ type: "searched", payload: typedText });
-  }, [typedText, dispatch]);
+  }, [typedText, dispatch, searchedText]);
   return (
     <div className="grid-header__search-box">
       <span className="search-box__magnifying-glass">
