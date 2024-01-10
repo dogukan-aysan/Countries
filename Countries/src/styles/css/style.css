@@ -274,8 +274,13 @@ body {
 .country-info__heading {
   font-weight: var(--font-weight-dark);
 }
-.country-info__list-item {
-  font-size: var(--font-size-homepage-items);
+.country-info__field {
+  font-weight: var(--font-weight-default);
+}
+
+.button {
+  color: var(--color-text);
+  font-weight: var(--font-weight-light);
 }
 
 :root {

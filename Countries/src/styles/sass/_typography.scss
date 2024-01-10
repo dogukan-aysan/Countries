@@ -57,7 +57,12 @@ body {
   &__heading {
     font-weight: var(--font-weight-dark);
   }
-  &__list-item {
-    font-size: var(--font-size-homepage-items);
+  &__field {
+    font-weight: var(--font-weight-default);
   }
+}
+
+.button {
+  color: var(--color-text);
+  font-weight: var(--font-weight-light);
 }
