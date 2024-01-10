@@ -4,6 +4,7 @@ const initialState = {
   selectedCountry: "",
   searchedText: "",
   selectedRegion: "",
+  isDarkMode: false,
 };
 
 function reducer(state, action) {
@@ -14,6 +15,8 @@ function reducer(state, action) {
       return { ...state, searchedText: action.payload, selectedRegion: "" };
     case "region":
       return { ...state, selectedRegion: action.payload };
+    case "darkMode":
+      return { ...state, isDarkMode: !state.isDarkMode };
     default:
       return { ...state };
   }
@@ -22,11 +25,19 @@ function reducer(state, action) {
 const CountryContext = createContext();
 
 const CountryProvider = ({ children }) => {
-  const [{ selectedCountry, searchedText, selectedRegion }, dispatch] =
-    useReducer(reducer, initialState);
+  const [
+    { selectedCountry, searchedText, selectedRegion, isDarkMode },
+    dispatch,
+  ] = useReducer(reducer, initialState);
   return (
     <CountryContext.Provider
-      value={{ selectedCountry, searchedText, selectedRegion, dispatch }}
+      value={{
+        selectedCountry,
+        searchedText,
+        selectedRegion,
+        isDarkMode,
+        dispatch,
+      }}
     >
       {children}
     </CountryContext.Provider>
