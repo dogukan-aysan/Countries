@@ -233,7 +233,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-default);
   font-weight: var(--font-weight-light);
-  color: var(--color-light-mode-text);
+  color: var(--color-text);
   line-height: var(--line-height-md);
 }
 
@@ -244,15 +244,20 @@ body {
   color: var(--color-input);
 }
 
+.grid-header__filter {
+  color: var(--color-text-light);
+}
+
 .country-card__heading {
   font-weight: var(--font-weight-dark);
 }
 .country-card__list-item {
   font-size: var(--font-size-homepage-items);
+  color: var(--color-text-light);
 }
 
 .list-item__field {
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-weight: var(--font-weight-default);
 }
 
@@ -310,8 +315,10 @@ body {
 }
 :root.dark-mode {
   --color-background: hsl(207, 26%, 17%);
-  --color-text: hsl(0, 0%, 100%);
+  --color-text: hsl(0, 2%, 91%);
+  --color-text-light: hsl(0, 0%, 90%);
   --color-elements: hsl(209, 23%, 22%);
+  --color-input: hsl(0, 0%, 92%);
 }
 
 /*# sourceMappingURL=style.css.map */

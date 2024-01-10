@@ -8,8 +8,10 @@
   --color-elements: hsl(0, 0%, 100%);
   &.dark-mode {
     --color-background: hsl(207, 26%, 17%);
-    --color-text: hsl(0, 0%, 100%);
+    --color-text: hsl(0, 2%, 91%);
+    --color-text-light: hsl(0, 0%, 90%);
     --color-elements: hsl(209, 23%, 22%);
+    --color-input: hsl(0, 0%, 92%);
   }
   ////////////////////////////////
   // TYPOGRAPHY
