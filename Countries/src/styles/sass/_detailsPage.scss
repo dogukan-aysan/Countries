@@ -1,9 +1,9 @@
 .country-page {
   &__main {
-    background-color: var(--color-light-mode-background);
+    background-color: var(--color-background);
   }
   &__back-button {
-    background-color: var(--color-light-mode-elements);
+    background-color: var(--color-elements);
     box-shadow: var(--shadow-dark);
     border-radius: var(--radius-sm);
     &:hover {

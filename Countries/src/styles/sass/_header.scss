@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-sm) calc(var(--spacing-md) * 1.5);
-  background-color: var(--color-light-mode-elements);
+  background-color: var(--color-elements);
   box-shadow: var(--shadow-light);
   z-index: 1;
   &__heading {

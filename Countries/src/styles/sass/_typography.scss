@@ -9,11 +9,11 @@ body {
 /// SEARCH BOX
 .search-box {
   &__magnifying-glass {
-    color: var(--color-light-mode-input);
+    color: var(--color-input);
   }
   &__input {
     &::placeholder {
-      color: var(--color-light-mode-input);
+      color: var(--color-input);
     }
   }
 }
@@ -28,7 +28,7 @@ body {
   }
 }
 .list-item__field {
-  color: var(--color-light-mode-text-light);
+  color: var(--color-text-light);
   font-weight: var(--font-weight-default);
 }
 .dark-mode-toggle {
@@ -40,7 +40,7 @@ body {
   &__span {
     font-size: var(--font-size-homepage-items);
     font-weight: var(--font-weight-default);
-    color: var(--color-light-mode-text-light);
+    color: var(--color-text-light);
   }
 }
 ///////////////////////////////////////////////////////////

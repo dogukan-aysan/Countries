@@ -1,14 +1,19 @@
 :root {
   ////////////////////////////////
   // COLOR
-  --color-light-mode-background: hsl(0, 0%, 98%);
-  --color-light-mode-text: hsl(200, 15%, 12%);
-  --color-light-mode-text-light: hsl(206, 16%, 9%);
-  --color-light-mode-elements: hsl(0, 0%, 100%);
-  --color-light-mode-input: hsl(0, 0%, 52%);
-  --color-dark-mode-background: hsl(207, 26%, 17%);
-  --color-dark-mode-text: hsl(0, 0%, 100%);
-  --color-dark-mode-elements: hsl(209, 23%, 22%);
+  --color-text-light: hsl(206, 16%, 9%);
+  --color-input: hsl(0, 0%, 52%);
+  &,
+  &.light-mode {
+    --color-background: hsl(0, 0%, 98%);
+    --color-text: hsl(200, 15%, 12%);
+    --color-elements: hsl(0, 0%, 100%);
+  }
+  &.dark-mode {
+    --color-background: hsl(207, 26%, 17%);
+    --color-text: hsl(0, 0%, 100%);
+    --color-elements: hsl(209, 23%, 22%);
+  }
   ////////////////////////////////
   // TYPOGRAPHY
   --font-family: "Nunito Sans", sans-serif;
