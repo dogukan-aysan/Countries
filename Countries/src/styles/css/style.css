@@ -276,6 +276,9 @@ body {
 :root {
   --color-text-light: hsl(206, 16%, 9%);
   --color-input: hsl(0, 0%, 52%);
+  --color-background: hsl(0, 0%, 98%);
+  --color-text: hsl(200, 15%, 12%);
+  --color-elements: hsl(0, 0%, 100%);
   --font-family: "Nunito Sans", sans-serif;
   --font-size-default: 1.6rem;
   --font-size-homepage-items: 1.4rem;
@@ -304,11 +307,6 @@ body {
   --radius-sm: 5px;
   --radius-md: 7px;
   --radius-lg: 10rem;
-}
-:root, :root.light-mode {
-  --color-background: hsl(0, 0%, 98%);
-  --color-text: hsl(200, 15%, 12%);
-  --color-elements: hsl(0, 0%, 100%);
 }
 :root.dark-mode {
   --color-background: hsl(207, 26%, 17%);

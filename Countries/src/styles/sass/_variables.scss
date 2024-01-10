@@ -3,12 +3,9 @@
   // COLOR
   --color-text-light: hsl(206, 16%, 9%);
   --color-input: hsl(0, 0%, 52%);
-  &,
-  &.light-mode {
-    --color-background: hsl(0, 0%, 98%);
-    --color-text: hsl(200, 15%, 12%);
-    --color-elements: hsl(0, 0%, 100%);
-  }
+  --color-background: hsl(0, 0%, 98%);
+  --color-text: hsl(200, 15%, 12%);
+  --color-elements: hsl(0, 0%, 100%);
   &.dark-mode {
     --color-background: hsl(207, 26%, 17%);
     --color-text: hsl(0, 0%, 100%);
