@@ -123,6 +123,9 @@ body {
   align-items: center;
   gap: var(--spacing-tiny);
 }
+.dark-mode-toggle:hover {
+  cursor: pointer;
+}
 
 .homepage__main {
   background-color: var(--color-background);
