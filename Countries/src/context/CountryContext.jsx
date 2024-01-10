@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 
 const initialState = {
   selectedCountry: "",
@@ -29,6 +29,13 @@ const CountryProvider = ({ children }) => {
     { selectedCountry, searchedText, selectedRegion, isDarkMode },
     dispatch,
   ] = useReducer(reducer, initialState);
+
+  useEffect(() => {
+    isDarkMode
+      ? document.documentElement.classList.add("dark-mode")
+      : document.documentElement.classList.remove("dark-mode");
+  }, [isDarkMode]);
+
   return (
     <CountryContext.Provider
       value={{
