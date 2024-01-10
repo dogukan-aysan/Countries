@@ -1,16 +1,18 @@
 import { useContext } from "react";
-import { MdOutlineDarkMode } from "react-icons/md";
+import { IoMoonOutline } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
+
 import { CountryContext } from "../context/CountryContext";
 
 function DarkModeToggle() {
-  const { dispatch } = useContext(CountryContext);
+  const { dispatch, isDarkMode } = useContext(CountryContext);
   return (
     <div
       className="dark-mode-toggle"
       onClick={() => dispatch({ type: "darkMode" })}
     >
       <span className="dark-mode-toggle__icon">
-        <MdOutlineDarkMode />
+        {isDarkMode ? <IoMoon /> : <IoMoonOutline />}
       </span>
       <span>Dark Mode</span>
     </div>

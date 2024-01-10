@@ -121,7 +121,7 @@ body {
 .dark-mode-toggle {
   display: flex;
   align-items: center;
-  gap: var(--spacing-tiny);
+  gap: calc(var(--spacing-tiny) * 0.8);
 }
 .dark-mode-toggle:hover {
   cursor: pointer;
