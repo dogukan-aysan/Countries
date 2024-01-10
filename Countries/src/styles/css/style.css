@@ -240,6 +240,11 @@ body {
 .search-box__magnifying-glass {
   color: var(--color-input);
 }
+.search-box__input {
+  font: inherit;
+  color: var(--color-input);
+  font-size: var(--font-size-homepage-items);
+}
 .search-box__input::placeholder {
   color: var(--color-input);
 }
