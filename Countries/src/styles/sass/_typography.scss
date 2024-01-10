@@ -23,9 +23,17 @@ body {
 }
 ///////////////////////////////////////////////////////////
 /// FILTER
-.grid-header {
-  &__filter {
-    color: var(--color-text-light);
+.dropdown {
+  &__button {
+    font-family: var(--font-family);
+    font-size: var(--font-size-homepage-items);
+    color: var(--color-text);
+    font-weight: var(--font-weight-default);
+  }
+  &__options {
+    font-size: var(--font-size-homepage-items);
+    font-weight: var(--font-weight-default);
+    color: var(--color-text);
   }
 }
 ///////////////////////////////////////////////////////////

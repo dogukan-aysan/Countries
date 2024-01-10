@@ -17,6 +17,13 @@ function reducer(state, action) {
       return { ...state, selectedRegion: action.payload };
     case "darkMode":
       return { ...state, isDarkMode: !state.isDarkMode };
+    case "reset":
+      return {
+        ...state,
+        selectedCountry: "",
+        searchedText: "",
+        selectedRegion: "",
+      };
     default:
       return { ...state };
   }

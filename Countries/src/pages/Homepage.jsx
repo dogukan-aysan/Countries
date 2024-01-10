@@ -20,7 +20,9 @@ function Homepage() {
       <main className="homepage__main">
         <div className="main__grid-header">
           <SearchBox />
-          <Filter />
+          <div className="dropdown__container">
+            <Filter />
+          </div>
         </div>
         <CountryGrid />
       </main>
