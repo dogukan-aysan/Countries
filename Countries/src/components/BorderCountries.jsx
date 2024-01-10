@@ -2,6 +2,7 @@ import { useContext } from "react";
 import useCountriesWithCode from "../hooks/useCountriesWithCode";
 import Button from "./Button";
 import { CountryContext } from "../context/CountryContext";
+import Spinner from "./Spinner";
 
 function BorderCountries({ country }) {
   const { dispatch } = useContext(CountryContext);
@@ -10,7 +11,7 @@ function BorderCountries({ country }) {
   const handleBorderCountryClick = (clickedCountry) => {
     dispatch({ type: "country/selected", payload: clickedCountry });
   };
-  if (isLoading) return <div>LOADING...</div>;
+  if (isLoading) return <Spinner />;
   if (isError) return <div>ERROR</div>;
   return (
     <div className="country-info__border-countries">
