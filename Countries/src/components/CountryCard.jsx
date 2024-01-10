@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CountryContext } from "../context/CountryContext";
+import { formatNumber } from "../utils/helpers";
 
 // GRID CHILD
 function CountryCard({ country }) {
   const { flags, name, population, region, capital } = country;
+  const formattedPopulation = formatNumber(population);
   const { dispatch } = useContext(CountryContext);
   const navigate = useNavigate();
   const handleClick = () => {
@@ -21,7 +23,7 @@ function CountryCard({ country }) {
         <ul className="country-card__list">
           <li className="country-card__list-item">
             <span className="list-item__field">Population: </span>
-            {population}
+            {formattedPopulation}
           </li>
           <li className="country-card__list-item">
             <span className="list-item__field">Region: </span>

@@ -1,3 +1,5 @@
+import { formatNumber } from "../utils/helpers";
+
 function CountryOverview({ country }) {
   const {
     name,
@@ -9,6 +11,7 @@ function CountryOverview({ country }) {
     currencies,
     languages,
   } = country;
+  const formattedPopulation = formatNumber(population);
   return (
     <div className="country-info__overview">
       <h3 className="country-info__heading">{name.official}</h3>
@@ -21,7 +24,7 @@ function CountryOverview({ country }) {
         </li>
         <li className="country-info__list-item">
           <span className="country-info__field">Population: </span>
-          <span className="country-info__value">{population}</span>
+          <span className="country-info__value">{formattedPopulation}</span>
         </li>
         <li className="country-info__list-item">
           <span className="country-info__field">Region: </span>
