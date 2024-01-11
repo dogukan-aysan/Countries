@@ -45,6 +45,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Dogukanays](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Dogukanays](https://www.frontendmentor.io/profile/Dogukanays)
 - Linkedin - [@dogukan-aysan](https://www.linkedin.com/in/dogukan-aysan/)
 - Email - <dogukanaysan01@gmail.com>
