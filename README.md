@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshots
 
-| Light Theme                                                    | Dark Theme                                                   |
-| -------------------------------------------------------------- | ------------------------------------------------------------ |
+| Light Theme                                               | Dark Theme                                              |
+| --------------------------------------------------------- | ------------------------------------------------------- |
 | ![desktop-home-light](./public/home-light.png)            | ![desktop-home-dark](./public/home-dark.png)            |
 | ![desktop-details-light](./public/detail-light.png)       | ![desktop-details-dark](./public/detail-dark.png)       |
 | ![mobile-home-light](./public/mobile-home-light.png)      | ![mobile-home-dark](./public/mobile-home-dark.png)      |
@@ -45,6 +45,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Dogukanays](https://www.frontendmentor.io/profile/yourusername)
 - Linkedin - [@dogukan-aysan](https://www.linkedin.com/in/dogukan-aysan/)
 - Email - <dogukanaysan01@gmail.com>
