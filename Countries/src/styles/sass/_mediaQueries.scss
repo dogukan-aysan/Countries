@@ -58,10 +58,11 @@
   /// DETAILS
   .country-page {
     &__main {
+      overflow: scroll;
       padding: 0 calc(var(--spacing-sm) * 1.4);
     }
     &__back-button {
-      margin: var(--spacing-default) 0 calc(var(--spacing-md) * 1.3) 0;
+      margin: var(--spacing-default) 0 calc(var(--spacing-md) * 1) 0;
     }
     &__country-info {
       flex-direction: column;
