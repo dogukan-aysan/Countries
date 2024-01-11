@@ -4,8 +4,8 @@
   }
   &__back-button {
     background-color: var(--color-elements);
-    box-shadow: var(--shadow-dark);
-    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-light);
+    border-radius: var(--radius-tiny);
     &:hover {
       cursor: pointer;
       opacity: 0.8;

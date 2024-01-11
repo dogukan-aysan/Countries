@@ -5,6 +5,7 @@
   background-color: var(--color-elements);
   box-shadow: var(--shadow-light);
   z-index: 1;
+  align-items: center;
   &__heading {
     &:hover {
       cursor: pointer;
@@ -14,8 +15,11 @@
 .dark-mode-toggle {
   display: flex;
   align-items: center;
-  gap: calc(var(--spacing-tiny) * 0.8);
+  gap: calc(var(--spacing-tiny) * 1.2);
   &:hover {
     cursor: pointer;
+  }
+  &__icon {
+    margin-top: calc(var(--spacing-tiny) * 0.4);
   }
 }

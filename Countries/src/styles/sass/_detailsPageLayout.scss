@@ -46,8 +46,11 @@
     list-style-type: none;
   }
   &__list-item {
+    &:first-child {
+      max-width: calc(var(--spacing-huge) * 0.7);
+    }
     &:not(:last-child) {
-      margin-bottom: calc(var(--spacing-tiny) * 0.7);
+      margin-bottom: calc(var(--spacing-tiny) * 0.8);
     }
     &:nth-of-type(-n + 5) {
       margin-right: var(--spacing-lg);

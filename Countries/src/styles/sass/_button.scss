@@ -3,7 +3,7 @@
   padding: calc(var(--spacing-tiny) * 0.5) var(--spacing-sm);
   border: none;
   border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-dark);
+  box-shadow: var(--shadow-light);
   &:hover {
     cursor: pointer;
     opacity: 0.7;

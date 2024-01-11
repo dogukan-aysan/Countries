@@ -14,7 +14,7 @@ function DarkModeToggle() {
       <span className="dark-mode-toggle__icon">
         {isDarkMode ? <IoMoon /> : <IoMoonOutline />}
       </span>
-      <span>Dark Mode</span>
+      <span className="dark-mode-toggle__text">Dark Mode</span>
     </div>
   );
 }

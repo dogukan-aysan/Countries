@@ -30,7 +30,6 @@
     border-radius: var(--radius-tiny);
     box-shadow: 0 var(--spacing-tiny) var(--spacing-sm) rgba(0, 0, 0, 0.2);
     list-style: none;
-    overflow-y: auto;
     transition: 0.5s ease;
     transform: scaleY(0);
     opacity: 0;
@@ -39,7 +38,6 @@
   &__option {
     position: relative;
     display: flex;
-    gap: 1rem;
     align-items: center;
 
     background-color: var(--color-elements);

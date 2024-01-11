@@ -10,7 +10,7 @@
   &.dark-mode {
     --color-background: hsl(207, 26%, 17%);
     --color-text: hsl(0, 2%, 91%);
-    --color-text-light: hsl(0, 0%, 90%);
+    --color-text-light: hsl(0, 0%, 83%);
     --color-elements: hsl(209, 23%, 22%);
     --color-input: hsl(0, 0%, 92%);
     --color-hover: hsl(0, 0%, 47%);
@@ -20,6 +20,7 @@
   --font-family: "Nunito Sans", sans-serif;
   --font-size-default: 1.6rem;
   --font-size-homepage-items: 1.4rem;
+  --font-size-mobile: 1.3rem;
   --font-weight-light: 300;
   --font-weight-default: 600;
   --font-weight-dark: 800;
@@ -44,7 +45,7 @@
   ////////////////////////////////
   // SHADOW
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-light: 0 1rem 5rem rgba(0, 0, 0, 0.04);
   ////////////////////////////////
   // BORDER RADIUS
   --radius-tiny: 3px;
