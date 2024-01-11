@@ -28,10 +28,10 @@ Users should be able to:
 
 | Light Theme                                                    | Dark Theme                                                   |
 | -------------------------------------------------------------- | ------------------------------------------------------------ |
-| ![desktop-home-light](./screenshots/home-light.png)            | ![desktop-home-dark](./screenshots/home-dark.png)            |
-| ![desktop-details-light](./screenshots/detail-light.png)       | ![desktop-details-dark](./screenshots/detail-dark.png)       |
-| ![mobile-home-light](./screenshots/mobile-home-light.png)      | ![mobile-home-dark](./screenshots/mobile-home-dark.png)      |
-| ![mobile-details-light](./screenshots/mobile-detail-light.png) | ![mobile-details-dark](./screenshots/mobile-detail-dark.png) |
+| ![desktop-home-light](./public/home-light.png)            | ![desktop-home-dark](./public/home-dark.png)            |
+| ![desktop-details-light](./public/detail-light.png)       | ![desktop-details-dark](./public/detail-dark.png)       |
+| ![mobile-home-light](./public/mobile-home-light.png)      | ![mobile-home-dark](./public/mobile-home-dark.png)      |
+| ![mobile-details-light](./public/mobile-detail-light.png) | ![mobile-details-dark](./public/mobile-detail-dark.png) |
 
 ## My process
 
